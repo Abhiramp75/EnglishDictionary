@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word</title>
+    <link rel="stylesheet" href="{% static 'word.css' %}">
+</head>
+<body>
+    <div class="wrap">
+        <div class="search">
+          <form action="word">
+           <input type="text" name="search" class="searchTerm" placeholder="Input Your Word Here">
+           <button type="submit" class="searchButton">
+             Search
+          </button>
+         </form>
+        </div>
+        
+        <h3><span>Meaning:</span><br><br> {{meaning}}</h3>
+        
+        
+     </div>
+</body>
+</html>
